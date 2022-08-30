@@ -18,4 +18,9 @@ npm install primeicons --save
               "node_modules/primeng/resources/primeng.min.css"
             ],
 
-            
+3.- En app.module, importar los componentes a utilizar
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ButtonModule
+  ],
