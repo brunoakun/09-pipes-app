@@ -16,6 +16,7 @@ export class MenuComponent implements OnInit {
     this.items = [
       {
         label: 'File',
+        icon: 'pi pi-fw pi-file',
         items: [{
           label: 'New',
           icon: 'pi pi-fw pi-plus',
@@ -24,7 +25,10 @@ export class MenuComponent implements OnInit {
             { label: 'Other' },
           ]
         },
-        { label: 'Open' },
+        {
+          label: 'Open', 
+          icon: 'pi pi-fw pi-folder-open'
+        },
         { label: 'Quit' }
         ]
       },
