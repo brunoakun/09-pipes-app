@@ -57,23 +57,17 @@
         <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">date:'short'</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha hora corta</h6>
-                    <p class="card-text">{{fecha | date:'short' }}</p>
+                    <h5 class="card-title">date:'short/medium/long'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha hora estandard</h6>
+                    <p class="card-text">
+                        <b>short:</b> {{fecha | date:'short' }}<br>
+                        <b>medium:</b> {{fecha | date:'medium' }}<br>
+                        <b>long:</b> {{fecha | date:'long' }}
+                    </p>
                 </div>
             </div>
         </div>
 
-
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">date:'long'</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar la fecha larga</h6>
-                    <p class="card-text">{{fecha | date:'long' }}</p>
-                </div>
-            </div>
-        </div>
 
         <div class="col">
             <div class="card">
