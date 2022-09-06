@@ -1,1 +1,43 @@
-<p>no-comunes works!</p>
+<div class="container">
+
+    <div>
+        <h1 class="animate__animated animate__fadeIn">Pipes no comunes</h1>
+
+        <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+    </div>
+
+    <h2 class="text-success">NO comunes:</h2>
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">i18nSelect Pipe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">i18nSelect cambiará el texto de una plantilla en función
+                        del contenido de un objeto</h6>
+                    <p class="card-text">
+                        Saludos {{nombre}} es un placer
+                        {{genero | i18nSelect:generoMap}}
+                        a el evento...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">i18nPlural Pipe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">i18nPlural cambiará el texto de una plantilla de
+                        singular a plural</h6>
+                    <p class="card-text">
+                        Actualmente tenemos {{clientes.length | i18nPlural:clientesMap}} esperando...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
