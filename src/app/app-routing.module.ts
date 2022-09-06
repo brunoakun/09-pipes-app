@@ -20,6 +20,11 @@ const routes: Routes = [
     path: 'ordenar',
     component: OrdenarComponent
   },
+  {
+    // Cualquier otra cosa, redireccionamos al defoult ''
+    path: '**',
+    redirectTo: ''
+  }
 
 ];
 

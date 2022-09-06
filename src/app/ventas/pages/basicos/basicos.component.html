@@ -1,1 +1,91 @@
-<p>basicos works!</p>
+<div class="container">
+
+    <div>
+        <h1>Pipes básicos</h1>
+        <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+    </div>
+
+    <h6 class="text-success">Textos:</h6>
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">uppercase</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Mayúsculas</h6>
+                    <p class="card-text">{{holaMundo | uppercase}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">lowercase</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Minúsculas</h6>
+                    <p class="card-text">{{holaMundo | lowercase}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">titlecase</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Título</h6>
+                    <p class="card-text">{{holaMundo | titlecase}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h6 class="text-success">Fechas:</h6>
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">date</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar la fecha por defecto</h6>
+                    <p class="card-text">{{fecha|date }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">date:'short'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha hora corta</h6>
+                    <p class="card-text">{{fecha | date:'short' }}</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">date:'long'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar la fecha larga</h6>
+                    <p class="card-text">{{fecha | date:'long' }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">date:'dd/LL/yyyy HH:mm'</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha formato custom</h6>
+                    <p class="card-text">{{fecha | date:'dd/LL/yyyy HH:mm' }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

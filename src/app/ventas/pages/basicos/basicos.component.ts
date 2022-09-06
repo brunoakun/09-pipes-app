@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basicos.component.scss']
 })
 export class BasicosComponent implements OnInit {
+  holaMundo: string = 'hola mundo';
+  fecha: Date = new Date();           // Hoy
 
   constructor() { }
 

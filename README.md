@@ -1,11 +1,13 @@
 # 09PipesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Build 
+ng build --base-href="./"
 
 ## primeNG
 https://www.primefaces.org/primeng/setup
 
- INSTALAR:
+ INSTALAR primeng:
  1.- npm
 npm install primeng --save
 npm install primeicons --save
@@ -24,3 +26,6 @@ npm install primeicons --save
     AppRoutingModule,
     ButtonModule
   ],
+
+  ## Flex
+  npm install primeflex
