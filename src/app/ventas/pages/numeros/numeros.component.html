@@ -1,1 +1,63 @@
-<p>numeros works!</p>
+<div class="container">
+
+    <div>
+        <h1>Números: Decimal pipe y Porcentaje</h1>
+        <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+    </div>
+
+    <h2 class="text-success">Números:</h2>
+    <div class="row">
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">number</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ventasNetas | number</h6>
+                    <p class="card-text">
+                        <b>ventasNetas | number </b> {{ventasNetas | number }}<br>
+                        5 decimales <b>ventasNetas | number:'1.1-5' </b> {{ventasNetas | number:'4.1-5' }}<br>
+                        2 decimales <b>ventasNetas | number:'1.1-2':'fr' </b> {{ventasNetas | number:'4.1-2':'fr' }}<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">currency</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ventasNetas | currency</h6>
+                    <p class="card-text">
+                        <b>ventasNetas | currency </b> {{ventasNetas | currency }}<br>
+                        5 decimales <b>ventasNetas | currency:'€ ' </b> {{ventasNetas | currency:'€ ' }}<br> 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <h2 class="text-success">Porcentajes:</h2>
+    <div class="row">
+
+
+
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li><b>porcentaje|number </b> {{porcentaje|number}}</li> 
+                        <li><b>porcentaje|percent </b> {{porcentaje|percent}}</li> 
+                        <li><b>porcentaje|percent:'1.1-2' </b> {{porcentaje|percent:'1.1-2'}}</li> 
+                    </ul>                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
