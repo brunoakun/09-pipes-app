@@ -1,8 +1,7 @@
-<div class="container">
+<div class="container animate__animated animate__fadeIn">
 
     <div>
-        <h1 class="animate__animated animate__fadeIn">Pipes no comunes</h1>
-
+        <h1>Pipes no comunes</h1>
         <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
     </div>
 
@@ -56,6 +55,22 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">keyvalue Pipe</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">KeyValuePipe Transforma objetos en arrays</h6>
+                    <ul>
+                        <li *ngFor="let item of persona | keyvalue">
+                            <b>{{item.key|titlecase}} :</b> {{item.value}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
