@@ -1,11 +1,11 @@
 <div class="container">
 
     <div>
-        <h1>Pipes básicos</h1>
+        <h1>Textos y fechas</h1>
         <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
     </div>
 
-    <h6 class="text-success">Textos:</h6>
+    <h2 class="text-success">Textos:</h2>
     <div class="row">
 
         <div class="col">
@@ -41,32 +41,8 @@
     </div>
 
 
-    <h6 class="text-success">Fechas:</h6>
+    <h2 class="text-success">Fechas:</h2>
     <div class="row">
-
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">date</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar la fecha por defecto</h6>
-                    <p class="card-text">{{fecha|date }}</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">date:'short/medium/long'</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha hora estandard</h6>
-                    <p class="card-text">
-                        <b>short:</b> {{fecha | date:'short' }}<br>
-                        <b>medium:</b> {{fecha | date:'medium' }}<br>
-                        <b>long:</b> {{fecha | date:'long' }}
-                    </p>
-                </div>
-            </div>
-        </div>
 
 
         <div class="col">
@@ -75,6 +51,27 @@
                     <h5 class="card-title">date:'dd/LL/yyyy HH:mm'</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha formato custom</h6>
                     <p class="card-text">{{fecha | date:'dd/LL/yyyy HH:mm' }}</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li><b>fecha|date </b> {{fecha|date}}</li>
+                        <li><b>fecha|date:'longDate' </b> {{fecha|date:'longDate'}}</li>
+                        <li><b>fecha|date:'mediumDate' </b> {{fecha|date:'mediumDate'}}</li>
+                        <li><b>fecha|date:'shortDate' </b> {{fecha|date:'shortDate'}}</li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li><b>fecha|date:'long':'GMT-6' </b> {{fecha|date:'long':'GMT-6'}}</li>
+                        <li><b>fecha|date:'long':'GMT-10' </b> {{fecha|date:'long':'GMT-10'}}</li>
+                        <li><b>fecha|date:'long':'GMT-10':'en' </b> {{fecha|date:'long':'GMT-10':'en'}}</li>
+                        <li><b>fecha|date:'long':'GMT-10':'fr' </b> {{fecha|date:'long':'GMT-10':'fr'}}</li>
+                    </ul>
                 </div>
             </div>
         </div>
