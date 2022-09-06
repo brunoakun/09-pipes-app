@@ -17,11 +17,11 @@ export class NoComunesComponent implements OnInit {
   }
 
   //I18nPluralPipe
-  clientes: string[] = ['Maria','Pedro','Luis'];
-  clientesMap={
-    '=0':'No tenemos ningún cliente',
-    '=1':'Tenemos un cliente',
-    'other':'Tenemos # clientes'
+  clientes: string[] = ['Bruno', 'Maria', 'Pedro', 'Luis', 'Silvia'];
+  clientesMap = {
+    '=0': 'no tenemos ningún cliente',
+    '=1': 'tenemos un cliente',
+    'other': 'tenemos # clientes'
   }
 
   constructor() { }
@@ -29,6 +29,21 @@ export class NoComunesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  cambiar() {
+    if (this.nombre == 'Bruno') {
+      this.nombre = 'Silvia';
+      this.genero = 'fenemino';
+    } else {
+      this.nombre = 'Bruno';
+      this.genero = 'masculino';
+    }
+  }
 
+  borrar() {
+    if (this.clientes.length) {
+      console.log(this.clientes.length);
+      this.clientes.splice(-1);
+    }
+  }
 
 }

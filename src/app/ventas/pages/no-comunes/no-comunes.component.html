@@ -17,9 +17,10 @@
                         del contenido de un objeto</h6>
                     <p class="card-text">
                         Saludos {{nombre}} es un placer
-                        {{genero | i18nSelect:generoMap}}
+                        <b>{{genero | i18nSelect:generoMap}}</b>
                         a el evento...
                     </p>
+                    <button class="btn btn-secondary btn-sm" (click)="cambiar()">Cambiar género</button>
                 </div>
             </div>
         </div>
@@ -32,8 +33,9 @@
                     <h6 class="card-subtitle mb-2 text-muted">i18nPlural cambiará el texto de una plantilla de
                         singular a plural</h6>
                     <p class="card-text">
-                        Actualmente tenemos {{clientes.length | i18nPlural:clientesMap}} esperando...
+                        Actualmente {{clientes.length | i18nPlural:clientesMap}} esperando...
                     </p>
+                    <button class="btn btn-secondary btn-sm" (click)="borrar()">Borrar 1 cliente</button>
                 </div>
             </div>
         </div>
