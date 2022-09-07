@@ -23,7 +23,7 @@
                             <b>{{genero | i18nSelect:generoMap}}</b>
                             a el evento...
                         </p>
-                        <button class="btn btn-secondary btn-sm" (click)="cambiar()">Cambiar género</button>
+                        <button class="btn btn-primary btn-sm" (click)="cambiar()">Cambiar género</button>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                         <h5 class="card-title">i18nPlural Pipe</h5>
                         <h6 class="card-subtitle mb-2 text-muted">i18nPlural cambiará el texto de una plantilla de
                             singular a plural</h6>
-                        <p class="card-text">
+                        <p class="card-text text-primary">
                             Actualmente {{clientes.length | i18nPlural:clientesMap}} esperando...
                         </p>
                         <button class="btn btn-primary btn-sm" (click)="borrar()">Borrar 1 cliente</button>
@@ -55,11 +55,10 @@
                         <h6 class="card-subtitle mb-2 text-muted">slice pipe Creates a new Array or String containing a
                             subset (slice) of the elements. </h6>
                         <p class="card-text"> Mostrar array de Clientes sin usar ng-for </p>
-                        <pre>{{clientes | slice:0}}</pre>
+                        <pre class="text-primary">{{clientes | slice:0}}</pre>
                     </div>
                 </div>
             </div>
-
 
             <div class="col">
                 <div class="card">
@@ -68,7 +67,7 @@
                         <h6 class="card-subtitle mb-2 text-muted">KeyValuePipe Transforma objetos en arrays</h6>
                         <ul>
                             <li *ngFor="let item of persona | keyvalue">
-                                <b>{{item.key|titlecase}} :</b> {{item.value}}
+                                <b>{{item.key | titlecase}} :</b> {{item.value}}
                             </li>
                         </ul>
                     </div>
@@ -76,6 +75,10 @@
             </div>
 
 
+        </div><!-- row -->
+
+
+        <div class="row">
 
             <div class="col">
                 <div class="card">
@@ -83,8 +86,39 @@
                         <h5 class="card-title">json Pipe</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Muestra objetos json</h6>
                         <pre>
-                            {{heroes|json}} 
+                            {{heroes | json}} 
                        </pre>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">async Pipe I</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Subscribes to an Observable or Promise and returns the
+                            latest value it has emitted.</h6>
+                        <pre class="text-primary">
+                            {{miObervable | async}} 
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">async Pipe II</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Subscribes to an Observable or Promise and returns the
+                            latest value it has emitted.</h6>
+
+                        <pre class="text-primary" *ngIf="!(miObervable|async)">Resolviendo Obervable...</pre>
+                        <pre class="text-primary" *ngIf="!(miPromesa|async)">Resolviendo promesa...</pre>
+
+                        <pre class="text-primary">
+                            {{miPromesa | async}} 
+                            </pre>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -45,9 +46,23 @@ export class NoComunesComponent implements OnInit {
     }
   ];
 
+  //async Pipe
+  miObervable = interval(1000);   // Emite cada segundo
+
+  miPromesa = new Promise((resolve, reject) => {
+
+    setTimeout(() => {
+      resolve('Tenemos data desde miPromesa');
+    }, 3500);
+
+  });
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+    //this.miObervable.subscribe(console.log);
   }
 
   cambiar() {
