@@ -1,17 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+$theme-colors: (
+  "success": pink,
+  "primary": rgb(90, 160, 221),
+  "danger": #ff4136,
+);
 
-/* Usamos las variables del tema de primeNG */
-
-
-/*
-html,
-body {
-    background-color: var(--surface-b);
-    font-family: var(--font-family); 
-}
-
-.text-layout {
-    color: var(--text-color);
-}
- */
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
