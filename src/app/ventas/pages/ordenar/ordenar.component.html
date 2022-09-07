@@ -1,1 +1,78 @@
-<p>ordenar works!</p>
+<div class="container">
+
+    <div>
+        <h1>Pipes personalizados</h1>
+        <p>Pipes creados por nosotros</p>
+    </div>
+
+    <h2 class="text-success">Pipes propios:</h2>
+    <div class="animate__animated animate__fadeIn">
+
+
+        <div class="row">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mayúsculas</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">'BRunO' | mayusculas:{{mayus}}</h6>
+                        <p class="card-text">{{'BRunO' | mayusculas:mayus}}</p>
+                        <button class="btn btn-primary btn-sm" (click)="togleMayusculas()">Togle Mayúsculas</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ordenar tabla</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Encadenando pipes</h6>
+                        <div>
+                            <button (click)="ordena('nombre')" type="button" class="btn btn-outline-primary mr-1"><i class="pi pi-sort"></i> Por
+                                Nombre</button>
+
+                            <button (click)="ordena('precio')" type="button" class="btn btn-outline-primary mr-1"><i class="pi pi-sort"></i> Por
+                                Precio</button>
+
+                            <button (click)="ordena('color')" type="button" class="btn btn-outline-primary mr-1"><i class="pi pi-sort"></i> Por
+                                Color</button>
+
+                            <button (click)="ordena('stock')" type="button" class="btn btn-outline-primary mr-1"><i class="pi pi-sort"></i> Por
+                                Stock</button>
+                        </div>
+
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Color</th>
+                                    <th scope="col">Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let producto of productos | ordenar:orden; let i = index">
+                                    <th scope="row">{{i+1}}</th>
+                                    <td>{{producto.nombre | titlecase}}</td>
+                                    <td>{{producto.precio | number:'1.2-2'}}</td>
+                                    <td>{{producto.color | titlecase}}</td>
+                                    <td>{{producto.stock | SiNo | titlecase}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>

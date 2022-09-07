@@ -49,6 +49,7 @@ export class NoComunesComponent implements OnInit {
   //async Pipe
   miObervable = interval(1000);   // Emite cada segundo
 
+  
   miPromesa = new Promise((resolve, reject) => {
 
     setTimeout(() => {

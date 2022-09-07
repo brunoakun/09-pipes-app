@@ -27,5 +27,4 @@ npm install primeicons --save
     ButtonModule
   ],
 
-  ## Flex
-  npm install primeflex
+  ## Pipes y pipes personalizadas 
