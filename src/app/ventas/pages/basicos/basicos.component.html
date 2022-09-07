@@ -1,80 +1,86 @@
-<div class="container animate__animated animate__fadeIn">
-    
+<div class="container">
+
     <div>
         <h1>Textos y fechas</h1>
         <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
     </div>
 
     <h2 class="text-success">Textos:</h2>
-    <div class="row">
+    <div class="animate__animated animate__fadeIn">
 
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">uppercase</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Mayúsculas</h6>
-                    <p class="card-text">{{holaMundo | uppercase}}</p>
+
+        <div class="row">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">uppercase</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Mayúsculas</h6>
+                        <p class="card-text">{{holaMundo | uppercase}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">lowercase</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Minúsculas</h6>
-                    <p class="card-text">{{holaMundo | lowercase}}</p>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">lowercase</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Minúsculas</h6>
+                        <p class="card-text">{{holaMundo | lowercase}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">titlecase</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Título</h6>
-                    <p class="card-text">{{holaMundo | titlecase}}</p>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">titlecase</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Título</h6>
+                        <p class="card-text">{{holaMundo | titlecase}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-
-
-    <h2 class="text-success">Fechas:</h2>
-    <div class="row">
-
-
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">date:'dd/LL/yyyy HH:mm'</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha formato custom</h6>
-                    <p class="card-text">{{fecha | date:'dd/LL/yyyy HH:mm' }}</p>
-                </div>
-            </div>
         </div>
 
 
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li><b>fecha|date </b> {{fecha|date}}</li>
-                        <li><b>fecha|date:'longDate' </b> {{fecha|date:'longDate'}}</li>
-                        <li><b>fecha|date:'mediumDate' </b> {{fecha|date:'mediumDate'}}</li>
-                        <li><b>fecha|date:'shortDate' </b> {{fecha|date:'shortDate'}}</li>
-                    </ul>
-                    <hr>
-                    <ul>
-                        <li><b>fecha|date:'long':'GMT-6' </b> {{fecha|date:'long':'GMT-6'}}</li>
-                        <li><b>fecha|date:'long':'GMT-10' </b> {{fecha|date:'long':'GMT-10'}}</li>
-                        <li><b>fecha|date:'long':'GMT-10':'en' </b> {{fecha|date:'long':'GMT-10':'en'}}</li>
-                        <li><b>fecha|date:'long':'GMT-10':'fr' </b> {{fecha|date:'long':'GMT-10':'fr'}}</li>
-                    </ul>
+        <h2 class="text-success">Fechas:</h2>
+        <div class="row">
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">date:'dd/LL/yyyy HH:mm'</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Pipe para mostrar fecha formato custom</h6>
+                        <p class="card-text">{{fecha | date:'dd/LL/yyyy HH:mm' }}</p>
+                    </div>
                 </div>
             </div>
+
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <ul>
+                            <li><b>fecha|date </b> {{fecha|date}}</li>
+                            <li><b>fecha|date:'longDate' </b> {{fecha|date:'longDate'}}</li>
+                            <li><b>fecha|date:'mediumDate' </b> {{fecha|date:'mediumDate'}}</li>
+                            <li><b>fecha|date:'shortDate' </b> {{fecha|date:'shortDate'}}</li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <li><b>fecha|date:'long':'GMT-6' </b> {{fecha|date:'long':'GMT-6'}}</li>
+                            <li><b>fecha|date:'long':'GMT-10' </b> {{fecha|date:'long':'GMT-10'}}</li>
+                            <li><b>fecha|date:'long':'GMT-10':'en' </b> {{fecha|date:'long':'GMT-10':'en'}}</li>
+                            <li><b>fecha|date:'long':'GMT-10':'fr' </b> {{fecha|date:'long':'GMT-10':'fr'}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
 
     </div>
 

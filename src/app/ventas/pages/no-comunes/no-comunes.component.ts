@@ -25,11 +25,25 @@ export class NoComunesComponent implements OnInit {
   }
 
   //KeyValuePipe
-  persona: object|undefined = {
+  persona: object | undefined = {
     nombre: 'Bruno',
     edad: 53,
     direccion: 'Port Masnou, Barcelona'
   }
+
+  //jsonPipe
+  heroes = [
+    {
+      nombre: 'superman',
+      vuela: true
+    }, {
+      nombre: 'batman',
+      vuela: false
+    }, {
+      nombre: 'Super Lopez',
+      vuela: true
+    }
+  ];
 
   constructor() { }
 
